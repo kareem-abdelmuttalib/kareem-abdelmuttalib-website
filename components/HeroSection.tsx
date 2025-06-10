@@ -114,7 +114,7 @@ export default function Hero() {
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 rounded-full p-3 shadow-lg bg-muted border border-primary/20 hover:scale-110 transform transition-transform">
+            <div className="absolute top-16 right-0 rounded-full p-3 shadow-lg bg-muted border border-primary/20 hover:scale-110 transform transition-transform">
               <BsFileCode className="h-5 w-5 text-primary" />
             </div>
             <div className="absolute top-1/2 -left-6 rounded-full p-3 shadow-lg bg-muted border border-primary/20 hover:scale-110 transform transition-transform">

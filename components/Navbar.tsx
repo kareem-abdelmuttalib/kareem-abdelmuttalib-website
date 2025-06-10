@@ -30,7 +30,7 @@ export default function Navbar() {
     { icon: <FaGithub />, href: "https://github.com/DevNexEssam" },
     { icon: <FaLinkedin />, href: "https://linkedin.com/in/essam-mohamed" },
     { icon: <MdEmail />, href: "mailto:essam.mohamed.dev@gmail.com" },
-    { icon: <FaUpwork />, href: "https://www.upwork.com/freelancers/abdelmjids" }
+    { icon: <FaUpwork />, href: "https://www.upwork.com/freelancers/~01763f7f72fb79eab7" }
   ];
 
   return (
