@@ -30,13 +30,13 @@ export default function About() {
           {/* Image with decorative elements */}
           <div className="relative group max-w-md mx-auto">
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-primary-foreground/20 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition-all duration-300"></div>
-            <div className="relative aspect-square rounded-xl overflow-hidden border-4 border-background shadow-2xl transform rotate-1 group-hover:rotate-0 transition-transform duration-300">
+            <div className="relative aspect-square rounded-xl overflow-hidden border-4 w-[500px] h-[500px] border-background shadow-2xl transform rotate-1 group-hover:rotate-0 transition-transform duration-300">
               <Image
-                src="/profile.png"
+                src="/profile-3.png"
                 alt="Essam Mohamed"
                 className="object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
-                width={400}
-                height={400}
+                fill  
+                priority
               />
               <div className="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
             </div>

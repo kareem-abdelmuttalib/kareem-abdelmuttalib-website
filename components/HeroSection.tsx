@@ -53,12 +53,12 @@ export default function Hero() {
               </span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mt-2 text-text-secondary">
-              Front-End Developer
+              Full-Stack Developer
             </h2>
           </div>
 
           <p className="text-lg max-w-xl text-text-secondary">
-            I craft responsive websites where technologies meet creativity. Building exceptional digital experiences with modern frontend frameworks.
+            I craft responsive web applications where technologies meet creativity. Building exceptional digital experiences with modern full stack frameworks.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
@@ -103,9 +103,9 @@ export default function Hero() {
           <div className="relative group">
             <div className="absolute -z-10 inset-0 rounded-full bg-gradient-to-tr from-primary/30 via-primary-foreground/20 to-primary/30 blur-2xl group-hover:opacity-80 transition-opacity"></div>
             
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-muted hover:border-primary/50 transition-all duration-300">
+            <div className="relative w-64 h-64 md:h-[400px] md:w-[400px] rounded-full overflow-hidden shadow-xl border-4 border-muted hover:border-primary/50 transition-all duration-300">
               <Image
-                src="/profile.png"
+                src="/profile-2.png"
                 alt="Essam Mohamed"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
