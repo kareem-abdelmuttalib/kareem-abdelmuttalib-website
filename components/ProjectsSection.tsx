@@ -51,7 +51,7 @@ const projects = [
     description:
       "A full-stack university student portal that enables students to manage their academic materials efficiently. This platform provides an intuitive and feature-rich environment for students ",
     image: "/UniPortal.png",
-    technologies: ["Next.js", "Tailwind CSS", "SWR"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB"],
     liveUrl: "https://uni-portal-msbv.vercel.app/",
     githubUrl: "https://github.com/DevNexEssam/uni-portal",
     featured: true,
