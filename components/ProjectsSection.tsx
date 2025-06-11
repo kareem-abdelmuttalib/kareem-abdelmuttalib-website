@@ -27,6 +27,16 @@ const projects = [
     featured: true,
   },
   {
+    title: "DashPro",
+    description:
+      "modern dashboard UI built with Next.js and Tailwind CSS. This project provides a complete frontend for a professional analytics dashboard.",
+    image: "/dash-pro.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB"],
+    liveUrl: "https://dash-pro-alpha.vercel.app/",
+    githubUrl: "https://github.com/DevNexEssam/dash-pro",
+    featured: true,
+  },
+  {
     title: "Portfolio",
     description:
       "A modern front-end portfolio showcasing projects, skills, and experiences with a responsive and interactive design.",
@@ -34,6 +44,16 @@ const projects = [
     technologies: ["Next.js", "Tailwind CSS", "SWR"],
     liveUrl: "https://portofolio-main-ebon.vercel.app/",
     githubUrl: "https://github.com/DevNexEssam/portofolio-main",
+    featured: true,
+  },
+  {
+    title: "UniPortal",
+    description:
+      "A full-stack university student portal that enables students to manage their academic materials efficiently. This platform provides an intuitive and feature-rich environment for students ",
+    image: "/UniPortal.png",
+    technologies: ["Next.js", "Tailwind CSS", "SWR"],
+    liveUrl: "https://uni-portal-msbv.vercel.app/",
+    githubUrl: "https://github.com/DevNexEssam/uni-portal",
     featured: true,
   },
   {
