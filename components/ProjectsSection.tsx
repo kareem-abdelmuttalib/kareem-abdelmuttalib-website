@@ -93,70 +93,52 @@ export default function ProjectsSection() {
   const otherProjects = projects.filter((project) => !project.featured);
 
   return (
-    <section id="projects" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-2 text-text-primary">
-            My Projects
+    <section id="projects" className="py-16 sm:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-text-primary">
+            My Work
           </h2>
-          <div className="h-1 w-20 bg-primary mx-auto"></div>
-          <p className="mt-4 text-text-secondary max-w-2xl mx-auto">
-            Here are some of the projects I've worked on. Each project
-            represents different skills and technologies I've mastered
-            throughout my career.
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-4"></div>
+          <p className="text-sm sm:text-base text-text-secondary max-w-2xl mx-auto">
+            Explore my collection of projects showcasing different technologies and solutions I've built.
           </p>
         </div>
 
         {/* Featured Projects */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold mb-8 text-center text-text-primary">
-            Featured Projects
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
-              <div key={index} className="group">
-                <div className="overflow-hidden h-full flex flex-col border border-border rounded-lg hover:shadow-lg transition-shadow bg-background">
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                    />
+              <div data-aos="zoom-in" key={index} className="group relative overflow-hidden rounded-xl border border-border bg-background hover:shadow-lg transition-all duration-300">
+                <div className="relative h-48 w-full overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent"></div>
+                </div>
+                <div className="p-6">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-xl font-bold text-text-primary">{project.title}</h3>
+                    <div className="flex space-x-2">
+                      <Link href={project.githubUrl} target="_blank" className="text-text-primary hover:text-primary transition-colors">
+                        <FaGithub className="h-5 w-5" />
+                      </Link>
+                      <Link href={project.liveUrl} target="_blank" className="text-text-primary hover:text-primary transition-colors">
+                        <FaExternalLinkAlt className="h-5 w-5" />
+                      </Link>
+                    </div>
                   </div>
-                  <div className="p-6 flex-1 flex flex-col">
-                    <h4 className="text-xl font-semibold mb-2 text-text-primary">
-                      {project.title}
-                    </h4>
-                    <p className="text-text-secondary mb-4 flex-1">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.technologies.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="flex gap-3 mt-auto">
-                      <Link
-                        href={project.liveUrl}
-                        target="_blank"
-                        className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md bg-primary text-text-primary hover:bg-primary/90"
-                      >
-                        <FaExternalLinkAlt className="h-3 w-3 mr-2" /> Live Demo
-                      </Link>
-                      <Link
-                        href={project.githubUrl}
-                        target="_blank"
-                        className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md border border-border bg-background hover:bg-muted"
-                      >
-                        <FaGithub className="h-3 w-3 mr-2" /> Code
-                      </Link>
-                    </div>
+                  <p className="text-sm text-text-secondary mb-4">{project.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -166,46 +148,31 @@ export default function ProjectsSection() {
 
         {/* Other Projects */}
         <div>
-          <h3 className="text-2xl font-semibold mb-8 text-center text-text-primary">
-            Other Projects
+          <h3 className="text-xl font-semibold mb-6 text-text-primary border-b border-border pb-2">
+            More Projects
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {otherProjects.map((project, index) => (
-              <div key={index} className="group">
-                <div className="overflow-hidden h-full flex flex-col border border-border rounded-lg hover:shadow-md transition-shadow bg-background">
-                  <div className="p-6 flex-1 flex flex-col">
-                    <h4 className="text-lg font-semibold mb-2 text-text-primary">
-                      {project.title}
-                    </h4>
-                    <p className="text-sm text-text-secondary mb-4 flex-1">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-1.5 mb-4">
-                      {project.technologies.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="text-xs border border-border rounded-full px-2 py-1"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="flex gap-3 mt-auto">
-                      <Link
-                        href={project.liveUrl}
-                        target="_blank"
-                        className="inline-flex items-center justify-center px-3 py-1.5 text-xs font-medium rounded-md border border-border bg-background hover:bg-muted"
-                      >
-                        <FaExternalLinkAlt className="h-2.5 w-2.5 mr-1" /> Demo
+              <div key={index} className="border border-border rounded-lg overflow-hidden hover:shadow-md transition-shadow bg-background">
+                <div className="p-5">
+                  <div className="flex justify-between items-start mb-3">
+                    <h4 className="font-medium text-text-primary">{project.title}</h4>
+                    <div className="flex space-x-2">
+                      <Link href={project.githubUrl} target="_blank" className="text-text-secondary hover:text-primary transition-colors">
+                        <FaGithub className="h-4 w-4" />
                       </Link>
-                      <Link
-                        href={project.githubUrl}
-                        target="_blank"
-                        className="inline-flex items-center justify-center px-3 py-1.5 text-xs font-medium rounded-md border border-border bg-background hover:bg-muted"
-                      >
-                        <FaGithub className="h-2.5 w-2.5 mr-1" /> Code
+                      <Link href={project.liveUrl} target="_blank" className="text-text-secondary hover:text-primary transition-colors">
+                        <FaExternalLinkAlt className="h-4 w-4" />
                       </Link>
                     </div>
+                  </div>
+                  <p className="text-xs text-text-secondary mb-3">{project.description}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className="text-[10px] px-2 py-0.5 rounded-full border border-border text-primary">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>

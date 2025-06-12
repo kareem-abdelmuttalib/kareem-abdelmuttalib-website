@@ -35,11 +35,11 @@ export default function Navbar() {
 
   return (
     <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "py-2 bg-background/90 backdrop-blur-md shadow-lg" : "py-4 bg-background"
+      className={`fixed w-full z-50 transition-all duration-300 px-8 flex flex-col justify-center items-center ${
+        scrolled ? "py-2 bg-background/90 backdrop-blur-md shadow-lg" : "py-5 bg-background"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="#home" className="text-2xl font-bold text-text-primary">
