@@ -61,8 +61,7 @@ const projects = [
     liveUrl: "#",
     githubUrl: "#",
     featured: false,
-    - icon: <SiKaliLinux className="text-[#557C94]" />
-    + icon: <SiKalilinux className="text-[#557C94]" />
+    icon: <SiKalilinux className="text-[#557C94]" />,
   },
   {
     title: "OWASP WebGoat Solutions",
@@ -84,8 +83,7 @@ const projects = [
     liveUrl: "#",
     githubUrl: "#",
     featured: false,
-    - icon: <SiKaliLinux className="text-[#557C94]" />
-    + icon: <SiKalilinux className="text-[#557C94]" />
+    icon: <SiKalilinux className="text-[#557C94]" />,
   },
   {
     title: "Security Awareness Training",
