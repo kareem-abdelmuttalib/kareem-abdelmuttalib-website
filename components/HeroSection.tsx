@@ -15,7 +15,7 @@ export default function Hero() {
 
   const techStack = [
     {
-      icon: <SiKaliLinux className="h-5 w-5 sm:h-6 sm:w-6 text-[#557C94]" />,
+      icon: <SiKalilinux className="h-5 w-5 sm:h-6 sm:w-6 text-[#557C94]" />,
       label: "Kali Linux",
     },
     {
