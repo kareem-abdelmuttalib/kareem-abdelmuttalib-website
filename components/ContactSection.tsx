@@ -11,39 +11,39 @@ export default function ContactSection() {
     {
       icon: <FaMapMarkerAlt className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />,
       title: "Location",
-      value: "Alex, Egypt"
+      value: "North Sinai, Egypt"
     },
     {
       icon: <MdEmail className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />,
       title: "Email",
-      value: "essam.mohamed.dev@gmail.com"
+      value: "kareem.abdelmuttalib.eg@gmail.com"
     },
     {
       icon: <FaPhone className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />,
       title: "Phone",
-      value: "+20 1068446885"
+      value: "+20 1080096438"
     }
   ];
 
   // Social links data
   const socialLinks = [
     {
-      href: "https://github.com/DevNexEssam",
+      href: "https://github.com/kareem-abdelmuttalib",
       icon: <FaGithub className="h-4 w-4 sm:h-5 sm:w-5" />,
       label: "GitHub"
     },
     {
-      href: "https://www.instagram.com/essam_iam/",
+      href: "https://www.instagram.com/kareem.abdel_muttalib/",
       icon: <FaInstagram className="h-4 w-4 sm:h-5 sm:w-5" />,
       label: "Instagram"
     },
     {
-      href: "https://www.linkedin.com/in/essam-mohamed-829b27342/",
+      href: "https://www.linkedin.com/in/kareem-abdelmuttalib/",
       icon: <FaLinkedin className="h-4 w-4 sm:h-5 sm:w-5" />,
       label: "LinkedIn"
     },
     {
-      href: "mailto:essam.mohamed.dev@gmail.com",
+      href: "mailto:kareem.abdelmuttalib.eg@gmail.com",
       icon: <MdEmail className="h-4 w-4 sm:h-5 sm:w-5" />,
       label: "Email"
     }
@@ -84,9 +84,7 @@ export default function ContactSection() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-text-primary">Get In Touch</h2>
           <div className="h-1 w-16 sm:w-20 bg-primary mx-auto"></div>
           <p className="mt-3 sm:mt-4 text-sm sm:text-base text-text-secondary max-w-2xl mx-auto">
-            Have a project in mind or want to discuss potential opportunities?
-            Feel free to reach out to me using the form below or through my
-            contact information.
+            Have a security assessment need, collaboration idea, or a potential opportunity? Reach out via the form below or contact me directly. I’m available for penetration testing engagements, security consultations, and research collaborations.
           </p>
         </div>
 
@@ -95,9 +93,7 @@ export default function ContactSection() {
           <div className="space-y-6 sm:space-y-8">
             <h3 className="text-xl sm:text-2xl font-semibold text-text-primary">Contact Information</h3>
             <p className="text-sm sm:text-base text-text-secondary">
-              Feel free to reach out to me through any of the following methods.
-              I'm always open to discussing new projects, creative ideas, or
-              opportunities.
+              For urgent inquiries or vulnerability disclosures, use the encrypted channels listed below.
             </p>
 
             <div className="space-y-4 sm:space-y-6">
