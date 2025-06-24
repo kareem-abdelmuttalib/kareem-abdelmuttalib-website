@@ -27,10 +27,10 @@ export default function Navbar() {
   ];
 
   const socialLinks = [
-    { icon: <FaGithub />, href: "https://github.com/DevNexEssam" },
-    { icon: <FaLinkedin />, href: "https://linkedin.com/in/essam-mohamed" },
-    { icon: <MdEmail />, href: "mailto:essam.mohamed.dev@gmail.com" },
-    { icon: <FaUpwork />, href: "https://www.upwork.com/freelancers/~01763f7f72fb79eab7" }
+    { icon: <FaGithub />, href: "https://github.com/kareem-abdelmuttalib" },
+    { icon: <FaLinkedin />, href: "https://linkedin.com/in/kareem-abdelmuttalib" },
+    { icon: <MdEmail />, href: "mailto:kareem.abdelmuttalib.eg@gmail.com" },
+    { icon: <FaUpwork />, href: "#" }
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="#home" className="text-2xl font-bold text-text-primary">
-            Essam<span className="text-primary">.</span>
+            Kareem<span className="text-primary">.</span>
           </Link>
 
           {/* Desktop Navigation */}
