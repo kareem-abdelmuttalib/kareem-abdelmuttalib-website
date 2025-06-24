@@ -4,61 +4,60 @@ import { FaBriefcase, FaGraduationCap, FaMapMarkerAlt, FaCalendarAlt } from "rea
 
 const workExperience = [
   {
-    title: "Front-End Developer",
-    company: "Freelance (Upwork & Nafathli)",
+    title: "Penetration Tester",
+    company: "Freelance",
     location: "Remote",
-    period: "2025 - Present",
+    period: "2023 - Present",
     description: [
-      "Developing modern web applications using Next.js and Tailwind CSS",
-      "Building interactive UI components with a strong focus on performance and user experience",
-      "Collaborating with clients to deliver customized front-end solutions",
-      "Optimizing web apps for SEO and accessibility",
+      "Conducted web application penetration tests for clients, identifying critical vulnerabilities (SQLi, XSS, CSRF)",
+      "Performed network security assessments using Nmap, Metasploit, and Wireshark",
+      "Delivered detailed reports with CVSS scoring and remediation strategies",
+      "Contributed to bug bounty programs on platforms like HackerOne",
     ],
   },
   {
-    title: "Front-End Developer",
-    company: "Postly (Personal Project)",
+    title: "Security Researcher",
+    company: "Personal Projects",
     location: "Remote",
-    period: "2025 - Present",
+    period: "2022 - Present",
     description: [
-      "Developed a social platform where users can create profiles and post prompts",
-      "Implemented authentication and authorization with NextAuth.js",
-      "Designed reusable UI components using Tailwind CSS",
-      "Integrated Mongoose for database management",
+      "Developed custom scripts for automated vulnerability scanning (Python, Bash)",
+      "Reverse-engineered malware samples in isolated environments",
+      "Published write-ups on Active Directory attack vectors and cloud security misconfigurations",
     ],
   },
   {
-    title: "Front-End Developer",
-    company: "dashMinds (Dashboard Project)",
-    location: "Remote",
-    period: "2025 - Present",
+    title: "IT Security Intern",
+    company: "ITI",
+    location: "Shebin El-Kom, Menoufia",
+    period: "2024 - Present",
     description: [
-      "Designed and developed a dashboard interface for employee and department management",
-      "Used App Router in Next.js for optimized routing and better performance",
-      "Implemented role-based access control for administrators and users",
+      "Conducted 50+ vulnerability assessments for web apps using Burp Suite and OWASP ZAP, identifying critical flaws (SQLi, XSS, IDOR).",
+      "Executed network penetration tests on client infrastructures, uncovering misconfigured firewalls and exposed services (Nmap, Metasploit).",
+      "Assisted in red team exercises, simulating advanced phishing and lateral movement attacks.",
     ],
   },
   {
-    title: "WordPress Developer",
-    company: "Tech Solutions Company",
-    location: "Alexandria, Egypt",
+    title: "2. Security Researcher",
+    company: "Bug Bounty Hunter",
+    location: "Remote",
     period: "2024",
     description: [
-      "Worked on building and customizing WordPress websites",
-      "Optimized website performance and enhanced UI/UX",
-      "Integrated plugins and third-party APIs for additional functionalities",
+      "Ranked top 5% on platforms like HackerOne and Bugcrowd for discovering high-impact vulnerabilities (e.g., RCE in SaaS platforms).",
+      "Developed Python automation scripts to scan for OWASP Top 10 vulnerabilities, cutting manual testing time by 40%.",
+      "Reverse-engineered malware samples in sandboxed environments, documenting IoCs for threat intelligence.",
     ],
   },
 ];
 
 const education = [
   {
-    degree: "Bachelor's Degree in Computer Science (In Progress)",
-    institution: "Borg El Arab Technological University",
+    degree: "Bachelor's Degree in Computer Science & AI (In Progress)",
+    institution: "University of Sadat City, Egypt",
     location: "Alexandria, Egypt",
-    period: "2022 - Present",
+    period: "2022 - 2026",
     description:
-    "Currently studying computer science with a focus on front-end development, web technologies, and modern frameworks. Working on various academic projects related to web applications and AI."
+    "Specialized coursework: Network Security, Ethical Hacking, Cryptography. Thesis: Exploiting IoT Device Vulnerabilities in Smart Home Systems."
   },
 ];
 
@@ -70,8 +69,7 @@ export default function ExperienceSection() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-text-primary">Experience & Education</h2>
           <div className="h-1 w-16 sm:w-20 bg-primary mx-auto"></div>
           <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-2xl mx-auto">
-            My professional journey and educational background that have shaped
-            my skills and expertise.
+            My journey in cybersecurity and academic foundation that shaped my technical expertise.
           </p>
         </div>
 
