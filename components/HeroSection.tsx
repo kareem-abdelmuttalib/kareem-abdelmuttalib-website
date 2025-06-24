@@ -3,7 +3,7 @@
 import { BsShieldLock, BsBug, BsShieldCheck } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
-import { SiKaliLinux, SiPython, SiLinux, SiDocker, SiOwasp } from "react-icons/si";
+import { SiKalilinux, SiPython, SiLinux, SiDocker, SiOwasp } from "react-icons/si";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
