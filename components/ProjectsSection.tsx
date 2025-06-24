@@ -1,10 +1,8 @@
-- /* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { SiBurpsuite, SiKalilinux, SiOwasp, SiPython } from "react-icons/si";
 import { BsShieldLock, BsBugFill } from "react-icons/bs";
-import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
