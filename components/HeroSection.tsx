@@ -1,9 +1,9 @@
 "use client"
 /* eslint-disable react/no-unescaped-entities */
-import { BsFileCode, BsHexagon, BsCodeSlash } from "react-icons/bs";
+import { BsShieldLock, BsBug, BsShieldCheck } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
-import { SiTypescript, SiReact, SiTailwindcss, SiNextdotjs, SiMongodb } from "react-icons/si";
+import { SiKaliLinux, SiPython, SiLinux, SiDocker, SiOwasp } from "react-icons/si";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,24 +15,24 @@ export default function Hero() {
 
   const techStack = [
     {
-      icon: <SiTypescript className="h-5 w-5 sm:h-6 sm:w-6 text-[#3178C6]" />,
-      label: "TypeScript",
+      icon: <SiKaliLinux className="h-5 w-5 sm:h-6 sm:w-6 text-[#557C94]" />,
+      label: "Kali Linux",
     },
     {
-      icon: <SiReact className="h-5 w-5 sm:h-6 sm:w-6 text-[#61DAFB]" />,
-      label: "React",
+      icon: <SiPython className="h-5 w-5 sm:h-6 sm:w-6 text-[#3776AB]" />,
+      label: "Python",
     },
     {
-      icon: <SiNextdotjs className="h-5 w-5 sm:h-6 sm:w-6 text-foreground" />,
-      label: "Next.js",
+      icon: <SiOwasp className="h-5 w-5 sm:h-6 sm:w-6 text-foreground" />,
+      label: "OWASP",
     },
     {
-      icon: <SiTailwindcss className="h-5 w-5 sm:h-6 sm:w-6 text-[#06B6D4]" />,
-      label: "Tailwind CSS",
+      icon: <SiLinux className="h-5 w-5 sm:h-6 sm:w-6 text-[#FCC624]" />,
+      label: "Linux",
     },
     {
-      icon: <SiMongodb className="h-5 w-5 sm:h-6 sm:w-6 text-green-600" />,
-      label: "Mongodb",
+      icon: <SiDocker className="h-5 w-5 sm:h-6 sm:w-6 text-[#2496ED]" />,
+      label: "Docker",
     },
   ];
 
@@ -53,23 +53,29 @@ export default function Hero() {
         <div data-aos="zoom-in-down" className="space-y-4 sm:space-y-6 text-center md:text-left order-2 md:order-1">
           <div>
             <span className="inline-block px-3 py-1 text-xs sm:text-sm font-medium rounded-full mb-3 sm:mb-4 bg-muted text-foreground border border-primary/20 hover:bg-primary/10 transition-colors">
+              Available for Security Engagements
+            </span>
+            <span className="inline-block px-3 py-1 text-xs sm:text-sm font-medium rounded-full mb-3 sm:mb-4 bg-muted text-foreground border border-primary/20 hover:bg-primary/10 transition-colors">
               Available for Freelance Work
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-text-primary">
               Hi, I'm{' '}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-foreground">
-                Essam Mohamed
+                Kareem Abdelmuttalib
               </span>
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-2 text-text-secondary">
-              Full-Stack Developer
+              Penetration Tester & Security Researcher
             </h2>
           </div>
 
           <p className="text-base sm:text-lg max-w-xl text-text-secondary">
-            I craft responsive web applications where technologies meet creativity. Building exceptional digital experiences with modern full stack frameworks.
+            I identify vulnerabilities before attackers do, transforming weaknesses into fortified defenses.
           </p>
-
+          <p className="text-base sm:text-lg max-w-xl text-text-secondary">
+           Specializing in ethical hacking, web app security, and threat intelligence.
+          </p>
+          
           <div className="flex flex-wrap gap-3 sm:gap-4 justify-center md:justify-start pt-2">
             <Link
               href="#projects"
@@ -88,7 +94,7 @@ export default function Hero() {
           <div className="flex flex-col gap-3 sm:gap-4 pt-3 sm:pt-4">
             {/* Tech Stack */}
             <div className="flex flex-col items-center md:items-start gap-2">
-              <p className="text-xs sm:text-sm text-text-secondary">Tech I work with:</p>
+              <p className="text-xs sm:text-sm text-text-secondary">Tools I work with:</p>
               <div className="flex flex-wrap justify-center gap-2">
                 {techStack.map((tech, index) => (
                   <div 
@@ -114,23 +120,23 @@ export default function Hero() {
             
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:h-[350px] md:w-[350px] lg:h-[400px] lg:w-[400px] rounded-full overflow-hidden shadow-xl border-4 border-muted hover:border-primary/50 transition-all duration-300">
               <Image
-                src="/profile-2.png"
-                alt="Essam Mohamed"
+                src="/profile-3.png"
+                alt="Kareem Abdelmuttalib"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
                 priority
               />
             </div>
 
-            {/* Decorative Elements */}
+            {/* Decorative Elements - Changed to security icons */}
             <div className="absolute top-12 sm:top-16 right-0 rounded-full p-2 sm:p-3 shadow-lg bg-muted border border-primary/20 hover:scale-110 transform transition-transform">
-              <BsFileCode className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+              <BsShieldLock className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
             </div>
             <div className="absolute top-1/2 -left-4 sm:-left-6 rounded-full p-2 sm:p-3 shadow-lg bg-muted border border-primary/20 hover:scale-110 transform transition-transform">
-              <BsHexagon className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+              <BsBug className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
             </div>
             <div className="absolute -bottom-3 sm:-bottom-4 right-1/4 rounded-full p-2 sm:p-3 shadow-lg bg-muted border border-primary/20 hover:scale-110 transform transition-transform">
-              <BsCodeSlash className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+              <BsShieldCheck className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
             </div>
           </div>
         </div>
