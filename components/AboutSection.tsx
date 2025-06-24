@@ -3,9 +3,9 @@
 
 export default function About() {
   const personalInfo = [
-    { title: "Name", value: "Essam Mohamed", icon: "👨‍💻" },
-    { title: "Email", value: "essam.mohamed.dev@gmail.com", icon: "✉️" },
-    { title: "Location", value: "Alex, Egypt", icon: "📍" },
+    { title: "Name", value: "Kareem Abdelmuttalib", icon: "👨‍💻" },
+    { title: "Email", value: "kareem.abdelmuttalib.eg@gmail.com", icon: "✉️" },
+    { title: "Location", value: "North Sinai, Egypt", icon: "📍" },
     { title: "Status", value: "Open to opportunities", icon: "🔍" },
   ];
 
@@ -47,7 +47,7 @@ export default function About() {
                 <div className="flex-1">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-text-primary relative">
                     <span className="relative">
-                      Full-Stack Developer
+                      Penetration Tester | Web & Network Security Enthusiast
                       <span className="absolute -bottom-1 sm:-bottom-2 left-0 w-12 sm:w-16 h-0.5 sm:h-1 bg-primary rounded-full"></span>
                     </span>
                   </h3>
@@ -56,42 +56,38 @@ export default function About() {
                     <p>
                       I'm{" "}
                       <span className="text-primary font-semibold">
-                        Essam Mohamed
+                        Kareem Abdelmuttalib
                       </span>
-                      , a dedicated developer with 1+ year of experience
-                      creating exceptional digital solutions that blend
-                      aesthetics with functionality.
+                      , a passionate cybersecurity professional with hands-on experience in web application penetration testing and network security. My expertise lies in identifying vulnerabilities, securing systems, and implementing robust defenses against cyber threats.
                     </p>
 
                     <p>
-                      My journey in development has equipped me with expertise
-                      across the entire stack, specializing in{" "}
-                      <span className="text-primary font-semibold">React</span>,{" "}
+                     Equipped with industry-recognized certifications like eJPT, CEH, eCPPT, and more, I specialize in:{" "}
+                      <span className="text-primary font-semibold">Web Application Security (OWASP Top 10, Burp Suite, SQLi, XSS)</span>,{" "}
                       <span className="text-primary font-semibold">
-                        Next.js
+                        Network Penetration Testing (Nmap, Metasploit, Wireshark)
                       </span>
-                      , and modern backend technologies that deliver scalable,
-                      high-performance applications.
+                      , and modern Red Teaming & Ethical Hacking methods and techniques.
                     </p>
 
                     {/* Philosophy box */}
                     <div data-aos="fade-right" className="bg-background/50 p-4 sm:p-6 rounded-lg sm:rounded-xl border border-border mt-6 sm:mt-8">
                       <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-text-primary">
-                        Development Philosophy
+                        Security Philosophy
                       </h4>
                       <ul className="space-y-2 sm:space-y-3">
                         <li className="flex items-start gap-2 sm:gap-3">
                           <span className="text-primary mt-0.5 sm:mt-1">✓</span>
-                          <span>Clean, maintainable code as a foundation</span>
+                          <span>Offensive mindset for defensive strength – Think like an attacker to build stronger defenses.</span>
                         </li>
                         <li className="flex items-start gap-2 sm:gap-3">
                           <span className="text-primary mt-0.5 sm:mt-1">✓</span>
-                          <span>Performance optimization from day one</span>
+                          <span>Continuous learning – Staying ahead of evolving threats and attack vectors.</span>
                         </li>
                         <li className="flex items-start gap-2 sm:gap-3">
                           <span className="text-primary mt-0.5 sm:mt-1">✓</span>
                           <span>
-                            Accessibility as a priority, not an afterthought
+                            Ethical responsibility – Ensuring security without compromising integrity.
                           </span>
                         </li>
                       </ul>
@@ -132,8 +128,7 @@ export default function About() {
                         Current Focus
                       </h4>
                       <p className="text-xs sm:text-sm text-text-secondary">
-                        Expanding expertise in cloud architectures and advanced
-                        React patterns
+                        Advancing expertise in advanced penetration testing techniques (Active Directory attacks, cloud security).
                       </p>
                     </div>
                   </div>
